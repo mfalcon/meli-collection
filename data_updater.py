@@ -104,9 +104,7 @@ def main():
     for site_id in ML_SITES:
         mapi = meli_api.MeliAPI()
         mu = MeliUpdater(mapi)
-        #mu.insert_all_categories(ALLOWED_CATEGORIES[site_id])
-        mu.insert_items_description()
-        
+        mu.insert_all_categories(ALLOWED_CATEGORIES[site_id])        
     
     
 if __name__ == '__main__':
